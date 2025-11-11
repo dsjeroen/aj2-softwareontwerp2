@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DrieLagenMetSQL.Domain\RadVanFortuin.Domain.csproj" />
+    <ProjectReference Include="..\DrieLagenMetSQL.Persistence\RadVanFortuin.Persistence.csproj" />
+    <ProjectReference Include="..\DrieLagenMetSQL.Presentation\RadVanFortuin.Presentation.csproj" />
+  </ItemGroup>
+
+</Project>
