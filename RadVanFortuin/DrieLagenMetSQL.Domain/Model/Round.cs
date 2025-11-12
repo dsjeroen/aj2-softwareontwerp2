@@ -42,11 +42,10 @@
 
         public bool Solve(string guessedWord)
         {
+            AttemptsLeft--;
+
             if (string.IsNullOrWhiteSpace(guessedWord))
-            {
-                AttemptsLeft--;
                 return false;
-            }
 
             var normalized = guessedWord.Trim().ToLower();
             if (normalized == _word.Value)
@@ -55,7 +54,6 @@
                 return true;
             }
 
-            AttemptsLeft--;
             return false;
         }
 

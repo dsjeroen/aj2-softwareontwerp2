@@ -9,7 +9,6 @@ namespace RadVanFortuin.Domain
     /// </summary>
     public class DomainController
     {
-        private readonly ICategoryRepository _repo;
         private readonly Game _game = new();
 
         /// <summary>Alle rondes van het huidige spel.</summary>
